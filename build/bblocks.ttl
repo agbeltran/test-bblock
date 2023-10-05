@@ -13,10 +13,10 @@ bblocks:ogc.bbr.template.my-building-block a skos:Concept,
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/generateddocs/json-full/bbr/template/my-building-block/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/generateddocs/markdown/bbr/template/my-building-block/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/generateddocs/slate-build/bbr/template/my-building-block/" ] ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/generateddocs/slate-build/bbr/template/my-building-block/" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/generateddocs/markdown/bbr/template/my-building-block/index.md" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-04-05"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
@@ -33,14 +33,14 @@ bblocks:ogc.bbr.template.my-building-block a skos:Concept,
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-10-05T14:24:55.359650"^^xsd:dateTime ;
-    prov:startedAtTime "2023-10-05T14:24:55.282669"^^xsd:dateTime ;
+    prov:endedAtTime "2023-10-05T14:50:04.749951"^^xsd:dateTime ;
+    prov:startedAtTime "2023-10-05T14:50:04.673007"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/register.json> ] ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
