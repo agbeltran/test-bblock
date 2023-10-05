@@ -72,14 +72,14 @@
   "skos:prefLabel": "OGC Building Blocks Register",
   "hasConcepts": [
     {
-      "name": "My Building Block",
-      "abstract": "This Building Block serves as a template to create new ones",
+      "name": "MOD-DCAT profile Building Block",
+      "abstract": "This Building Block describes the DCAT-profile for MOD",
       "status": "under-development",
-      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "dateTimeAddition": "2023-10-05T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-04-05",
+      "dateOfLastChange": "2023-10-05",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {

@@ -1,5 +1,5 @@
 ---
-title: My Building Block (Schema)
+title: MOD-DCAT profile Building Block (Schema)
 
 language_tabs:
   - shell
@@ -8,7 +8,7 @@ language_tabs:
 
 toc_footers:
   - Version 0.1
-  - <a href='#'>My Building Block</a>
+  - <a href='#'>MOD-DCAT profile Building Block</a>
   - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
 
 search: true
@@ -16,13 +16,13 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: My Building Block (Schema)
+  - name: MOD-DCAT profile Building Block (Schema)
 ---
 
 
-# My Building Block `ogc.bbr.template.my-building-block`
+# MOD-DCAT profile Building Block `ogc.bbr.template.my-building-block`
 
-This Building Block serves as a template to create new ones
+This Building Block describes the DCAT-profile for MOD
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:

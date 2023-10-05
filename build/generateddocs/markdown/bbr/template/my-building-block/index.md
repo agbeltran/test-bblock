@@ -1,9 +1,9 @@
 
-# My Building Block (Schema)
+# MOD-DCAT profile Building Block (Schema)
 
 `ogc.bbr.template.my-building-block` *v0.1*
 
-This Building Block serves as a template to create new ones
+This Building Block describes the DCAT-profile for MOD
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
