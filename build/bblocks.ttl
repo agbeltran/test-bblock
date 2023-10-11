@@ -33,17 +33,17 @@ bblocks:ogc.bbr.template.my-building-block a skos:Concept,
     skos:prefLabel "OGC Building Blocks Register" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2023-10-05T14:54:50.822813"^^xsd:dateTime ;
-    prov:startedAtTime "2023-10-05T14:54:50.741260"^^xsd:dateTime ;
+    prov:endedAtTime "2023-10-11T21:56:34.672295"^^xsd:dateTime ;
+    prov:startedAtTime "2023-10-11T21:56:34.593786"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/register.json> ] ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.14" ;
+            dct:hasVersion "0.3.15.dev1+g2b17930" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 

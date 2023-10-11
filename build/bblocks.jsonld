@@ -72,6 +72,7 @@
   "skos:prefLabel": "OGC Building Blocks Register",
   "hasConcepts": [
     {
+      "itemIdentifier": "ogc.bbr.template.my-building-block",
       "name": "MOD-DCAT profile Building Block",
       "abstract": "This Building Block describes the DCAT-profile for MOD",
       "status": "under-development",
@@ -92,7 +93,6 @@
       "tags": [
         "templates"
       ],
-      "itemIdentifier": "ogc.bbr.template.my-building-block",
       "shaclRules": [],
       "schema": {
         "application/yaml": "https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/schema.yaml",
