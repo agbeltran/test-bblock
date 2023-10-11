@@ -1,0 +1,382 @@
+@prefix :        <http://thisfile> .
+@prefix semdcat: <http://purl.org/semdcat/> .
+@prefix dash:    <http://datashapes.org/dash#> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix mod:     <https://w3id.org/mod> .
+@prefix odrl:    <http://www.w3.org/ns/odrl/2/> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
+@prefix prov:    <https://www.w3.org/TR/prov-o/> .
+@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix pav:     <http://purl.org/pav/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix schema:  <http://schema.org/> .
+
+semdcat:SemanticArtefactShape a sh:NodeShape ;
+  sh:targetClass semdcat:SemanticArtefact ;
+  sh:property [
+    sh:path semdcat:saTitle ;
+    dc:title "title" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saLicense ;
+    dc:title "license" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saIdentifier ;
+    dc:title "identifier" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saAccessRights;
+    dc:title "access rights" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saCreator ;
+    dc:title "creator" ; 
+    sh:node :CreatorShape ; 
+    dash:editor dash:BlankNodeEditor ;
+  ], [
+    sh:path semdcat:saCreated ;
+    dc:title "created" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saDescription ;
+    dc:title "description" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saContactPoint ;
+    dc:title "contact point" ; 
+    sh:node :ContactPointShape ; 
+    dash:editor dash:BlankNodeEditor ;
+  ], [
+    sh:path semdcat:saVersionIRI ;
+    dc:title "version IRI" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saModified ;
+    dc:title "modified" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ],  [
+    sh:path semdcat:saKeyword ;
+    dc:title "keyword" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saAcronym ;
+    dc:title "acronym" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saLandingPage ;
+    dc:title "landing page" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saPublisher ;
+    dc:title "publisher" ; 
+    sh:node :PublisherShape ; 
+    dash:editor dash:BlankNodeEditor ;
+  ], [
+    sh:path semdcat:saSubject ;
+    dc:title "subject" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saType ;
+    dc:title "type IRI" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saIssued ;
+    dc:title "issued" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ],  [
+    sh:path semdcat:saTheme ;
+    dc:title "theme IRI" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saConformsTo ;
+    dc:title "conforms to" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saLanguage ;
+    dc:title "language" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saURI ;
+    dc:title "URI" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saContributor ;
+    dc:title "contributor" ; 
+    sh:node :ContributorShape ; 
+    dash:editor dash:BlankNodeEditor ;
+  ], [
+    sh:path semdcat:saRights ;
+    dc:title "rights" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saTemporal ;
+    dc:title "temporal coverage" ; 
+    sh:node :TemporalCoverageShape ; 
+    dash:editor dash:BlankNodeEditor ;
+  ], [
+    sh:path semdcat:saQualifiedRelation ;
+    dc:title "qualified relation" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saStatus ;
+    dc:title "status" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saHasPolicy ;
+    dc:title "has policy" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saQualifiedAttribution ;
+    dc:title "qualified attribution" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saWasGeneratedBy ;
+    dc:title "was generated by" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saRelation ;
+    dc:title "relation" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saIsReferencedBy ;
+    dc:title "is referenced by" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saIncludedInDataCatalog ;
+    dc:title "included in data catalog" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saCompetencyQuestion ;
+    dc:title "compentency question" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saAccrualPeriodicity ;
+    dc:title "accrual periodicity" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saSpatial ;
+    dc:title "spatial coverage" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:decimal ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
+    sh:path semdcat:saUsedEngineeringMethodology ;
+    dc:title "used engineering methodology" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextAreaEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saTemporalResolution ;
+    dc:title "temporal resolution" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:duration ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
+    sh:path semdcat:saHasFormalityLevel ;
+    dc:title "has formality level" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:saSpatialResolutionInMeters ;
+    dc:title "spatial resolution in meters" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:decimal ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LabelViewer ;
+  ], [
+    sh:path semdcat:saAccrualMethod ;
+    dc:title "accrual method" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ] .
+
+:ContactPointShape a sh:NodeShape ;
+  sh:targetClass semdcat:saContactPoint ;
+  sh:property [
+    sh:path semdcat:contactPointName ;
+    dc:title "contact point name" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:contactPointEmail;
+    dc:title "contact point e-mail" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ] .
+
+:CreatorShape a sh:NodeShape ;
+  sh:targetClass semdcat:saCreator ;
+  sh:property [
+    sh:path semdcat:creatorName ;
+    dc:title "creator name" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:creatorEmail;
+    dc:title "creator e-mail" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ] .
+
+:PublisherShape a sh:NodeShape ;
+  sh:targetClass semdcat:saPublisher ;
+  sh:property [
+    sh:path semdcat:publisherName ;
+    dc:title "publisher name" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:publisherEmail;
+    dc:title "publisher e-mail" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ] .
+
+:ContributorShape a sh:NodeShape ;
+  sh:targetClass semdcat:saContributor ;
+  sh:property [
+    sh:path semdcat:contributorName ;
+    dc:title "contributor name" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:contributorEmail;
+    dc:title "contributor e-mail" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ] .
+
+:TemporalCoverageShape a sh:NodeShape ;
+  sh:targetClass semdcat:saTemporal ;
+  sh:property [
+    sh:path semdcat:temporalStart ;
+    dc:title "temporal coverage start" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+  ], [
+    sh:path semdcat:temporalEnd ;
+    dc:title "temporal coverage end" ; 
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:string ;
+    dash:editor dash:TextFieldEditor ;
+    dash:viewer dash:LiteralViewer ;
+] .
