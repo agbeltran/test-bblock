@@ -2,11 +2,11 @@
 description: 'Schema for my building block'
 type: object
 properties:
-  a:
+  title:
     type: string
-    format: uri
-  b:
-    type: number
+    format: string
+  identifier:
+    type: string
 required:
-  - a
-  - b
+  - title
+  - identifier
