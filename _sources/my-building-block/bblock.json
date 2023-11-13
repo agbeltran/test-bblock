@@ -1,6 +1,6 @@
 {
-  "name": "MOD-DCAT profile Building Block",
-  "abstract": "This Building Block describes the DCAT-profile for MOD",
+  "name": "TEST profile Building Block",
+  "abstract": "This Building Block describes a TEST profile",
   "status": "under-development",
   "dateTimeAddition": "2023-10-05T00:00:00Z",
   "itemClass": "schema",
