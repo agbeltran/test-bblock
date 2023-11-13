@@ -3,19 +3,23 @@
   "description": "Schema for my building block",
   "type": "object",
   "properties": {
-    "a": {
+    "title": {
       "type": "string",
-      "format": "uri",
-      "x-jsonld-id": "https://example.org/my-bb-model/a",
-      "x-jsonld-type": "@id"
+      "format": "string"
     },
-    "b": {
-      "type": "number",
-      "x-jsonld-id": "https://example.org/my-bb-model/b"
+    "identifier": {
+      "type": "string"
     }
   },
   "required": [
-    "a",
-    "b"
-  ]
+    "title",
+    "identifier"
+  ],
+  "x-jsonld-extra-terms": {
+    "a": {
+      "x-jsonld-id": "https://example.org/my-bb-model/a",
+      "x-jsonld-type": "@id"
+    },
+    "b": "https://example.org/my-bb-model/b"
+  }
 }
