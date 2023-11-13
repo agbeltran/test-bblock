@@ -1,9 +1,9 @@
 
-# MOD-DCAT profile Building Block (Schema)
+# TEST profile Building Block (Schema)
 
 `ogc.bbr.template.my-building-block` *v0.1*
 
-This Building Block describes the DCAT-profile for MOD
+This Building Block describes a TEST profile
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
@@ -72,8 +72,8 @@ x-jsonld-extra-terms:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/schema.yaml)
+* YAML version: [schema.yaml](https://raw.githubusercontent.com/agbeltran/test-bblock/master/build/annotated/bbr/template/my-building-block/schema.json)
+* JSON version: [schema.json](https://raw.githubusercontent.com/agbeltran/test-bblock/master/build/annotated/bbr/template/my-building-block/schema.yaml)
 
 
 # JSON-LD Context
@@ -92,7 +92,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/context.jsonld)
+[context.jsonld](https://raw.githubusercontent.com/agbeltran/test-bblock/master/build/annotated/bbr/template/my-building-block/context.jsonld)
 
 ## Sources
 
@@ -102,6 +102,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/agbeltran/mod-dcat-bblock](https://github.com/agbeltran/mod-dcat-bblock)
+* URL: [https://github.com/agbeltran/test-bblock](https://github.com/agbeltran/test-bblock)
 * Path: `_sources/my-building-block`
 

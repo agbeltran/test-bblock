@@ -17,6 +17,6 @@ x-defs:
         x-jsonld-type: '@id'
       b: https://example.org/my-bb-model/b
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/schema-oas3.0.yaml
+    x-schema-source: https://raw.githubusercontent.com/agbeltran/test-bblock/master/build/annotated/bbr/template/my-building-block/schema-oas3.0.yaml
 allOf:
-- $ref: https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/schema-oas3.0.yaml#/x-defs/ogc.bbr.template.my-building-block
+- $ref: https://raw.githubusercontent.com/agbeltran/test-bblock/master/build/annotated/bbr/template/my-building-block/schema-oas3.0.yaml#/x-defs/ogc.bbr.template.my-building-block

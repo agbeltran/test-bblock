@@ -1,5 +1,5 @@
 ---
-title: MOD-DCAT profile Building Block (Schema)
+title: TEST profile Building Block (Schema)
 
 language_tabs:
   - shell
@@ -8,7 +8,7 @@ language_tabs:
 
 toc_footers:
   - Version 0.1
-  - <a href='#'>MOD-DCAT profile Building Block</a>
+  - <a href='#'>TEST profile Building Block</a>
   - <a href='https://blocks.ogc.org/register.html'>Building Blocks register</a>
 
 search: true
@@ -16,13 +16,13 @@ search: true
 code_clipboard: true
 
 meta:
-  - name: MOD-DCAT profile Building Block (Schema)
+  - name: TEST profile Building Block (Schema)
 ---
 
 
-# MOD-DCAT profile Building Block `ogc.bbr.template.my-building-block`
+# TEST profile Building Block `ogc.bbr.template.my-building-block`
 
-This Building Block describes the DCAT-profile for MOD
+This Building Block describes a TEST profile
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
@@ -104,12 +104,12 @@ x-jsonld-extra-terms:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fagbeltran%2Fmod-dcat-bblock%2Fmaster%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmy-building-block%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fagbeltran%2Ftest-bblock%2Fmaster%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmy-building-block%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/schema.yaml" target="_blank">https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/schema.yaml</a>
-* JSON version: <a href="https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/schema.json" target="_blank">https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/schema.json</a>
+* YAML version: <a href="https://raw.githubusercontent.com/agbeltran/test-bblock/master/build/annotated/bbr/template/my-building-block/schema.yaml" target="_blank">https://raw.githubusercontent.com/agbeltran/test-bblock/master/build/annotated/bbr/template/my-building-block/schema.yaml</a>
+* JSON version: <a href="https://raw.githubusercontent.com/agbeltran/test-bblock/master/build/annotated/bbr/template/my-building-block/schema.json" target="_blank">https://raw.githubusercontent.com/agbeltran/test-bblock/master/build/annotated/bbr/template/my-building-block/schema.json</a>
 
 
 # JSON-LD Context
@@ -127,10 +127,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fagbeltran%2Fmod-dcat-bblock%2Fmaster%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmy-building-block%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fraw.githubusercontent.com%2Fagbeltran%2Ftest-bblock%2Fmaster%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmy-building-block%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/context.jsonld" target="_blank">https://raw.githubusercontent.com/agbeltran/mod-dcat-bblock/master/build/annotated/bbr/template/my-building-block/context.jsonld</a>
+<a href="https://raw.githubusercontent.com/agbeltran/test-bblock/master/build/annotated/bbr/template/my-building-block/context.jsonld" target="_blank">https://raw.githubusercontent.com/agbeltran/test-bblock/master/build/annotated/bbr/template/my-building-block/context.jsonld</a>
 
 # References
 
@@ -140,7 +140,7 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/agbeltran/mod-dcat-bblock" target="_blank">https://github.com/agbeltran/mod-dcat-bblock</a>
+* URL: <a href="https://github.com/agbeltran/test-bblock" target="_blank">https://github.com/agbeltran/test-bblock</a>
 * Path:
-<code><a href="https://github.com/agbeltran/mod-dcat-bblock/blob/HEAD/_sources/my-building-block" target="_blank">_sources/my-building-block</a></code>
+<code><a href="https://github.com/agbeltran/test-bblock/blob/HEAD/_sources/my-building-block" target="_blank">_sources/my-building-block</a></code>
 
